@@ -1,5 +1,5 @@
-FROM python:3.9.6-slim-buster
-WORKDIR /Users/suraaj/Desktop/DSML_CAT_FLASK/DOCKER
+FROM python:3.10.6-slim-buster
+WORKDIR C:\Users\devai\Documents\GitHub\DSML_CAT_FLASK/DOCKER
 
 COPY requirements.txt ./
 RUN python3 -m pip install --upgrade pip
