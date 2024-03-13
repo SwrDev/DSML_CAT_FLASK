@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:381491840933:task-definition/cat_loan_app_task:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:771484910568:task-definition/cat_loan_task_app:1",
     "containerDefinitions": [
         {
             "name": "loan_app_container",
-            "image": "381491840933.dkr.ecr.us-east-1.amazonaws.com/cat_loan_app:latest",
+            "image": "771484910568.dkr.ecr.us-east-1.amazonaws.com/cat_loan_app:latest",
             "cpu": 0,
             "portMappings": [
                 {
@@ -24,7 +24,7 @@
                 "logDriver": "awslogs",
                 "options": {
                     "awslogs-create-group": "true",
-                    "awslogs-group": "/ecs/cat_loan_app_task",
+                    "awslogs-group": "/ecs/cat_loan_task_app",
                     "awslogs-region": "us-east-1",
                     "awslogs-stream-prefix": "ecs"
                 },
@@ -33,8 +33,8 @@
             "systemControls": []
         }
     ],
-    "family": "cat_loan_app_task",
-    "executionRoleArn": "arn:aws:iam::381491840933:role/ecsTaskExecutionRole",
+    "family": "cat_loan_task_app",
+    "executionRoleArn": "arn:aws:iam::771484910568:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
     "revision": 1,
     "volumes": [],
@@ -79,7 +79,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2024-03-11T16:04:19.383Z",
-    "registeredBy": "arn:aws:sts::381491840933:federated-user/scalerb5awsmacrh2024user61",
+    "registeredAt": "2024-03-13T08:12:28.457Z",
+    "registeredBy": "arn:aws:sts::771484910568:federated-user/scalerb5awsmacrh2024user29",
     "tags": []
 }
